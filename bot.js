@@ -26,8 +26,9 @@ client.user.setStatus("dnd");
 
 
 
-client.on('message', message => {
-     if (message.content === "!!help") {
+client.on("message", message => {
+ if (message.content === "-help") {
+  const embed = new Discord.RichEmbed()
 message.author.send("**`اوامر البوت`**" + `  **
 !!ping : لاظهار سرعة اتصال البوت
 
